@@ -36,11 +36,30 @@
             </nav>
                 
                 <div class="container mt-2 d-flex justify-content-center">
-                  <button id="toggleView" class="btn mb-3"><i class="fa-solid fa-table-cells"></i></button>
-
-                  <button id="toggleView" class="btn mb-3"><i class="fa-solid fa-square" style="color: #bfceea;"></i></button>
-
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse1" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    <i class="fa-solid fa-table-cells"></i></button>
+                  
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapse2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    <i class="fa-solid fa-square" style="color: #bfceea;"></i></button>
                 </div>
+
+                <div class="row">
+                  <div class="col">
+                    <div class="collapse" id="multiCollapse1">
+                      <div class="card card-body">
+                        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse" id="multiCollapse2">
+                      <div class="card card-body">
+                        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 
                
                 
