@@ -15,19 +15,15 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- NAV BRAND -->
-
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <i class="fa-brands fa-instagram"></i>
             Instagram
           </a>
 
           <div class="navbar-nav">
-            <!-- Button trigger modal -->
-
             <button
               type="button"
               class="btn btn-success"
@@ -37,7 +33,8 @@
               Create a new post
             </button>
 
-            <!-- Modal -->
+            <!-- modal -->
+
             <div
               class="modal fade"
               id="staticBackdrop"
@@ -62,8 +59,15 @@
                   </div>
                   <div class="modal-body">
                     <p><b>Caption:</b></p>
-                    <input type="text" class="form-control" placeholder="Add the
-                    caption of your post here"
+                    <div class="form">
+                      <textarea
+                        class="form-control"
+                        placeholder="Add the caption of your post here"
+                        id="floatingTextarea"
+                      ></textarea>
+                    </div>
+                    <i class="fa-solid fa-camera"></i>
+                    <i class="fa-solid fa-location-dot"></i>
                   </div>
 
                   <div class="modal-footer">
@@ -74,7 +78,7 @@
                     >
                       Close
                     </button>
-                    <button type="button" class="btn btn-success">
+                    <button type="submit" class="btn btn-success">
                       Publish
                     </button>
                   </div>
@@ -82,11 +86,11 @@
               </div>
             </div>
 
-            <!-- DROPDOWN -->
+            <!-- dropdown -->
 
             <div class="dropdown">
               <button
-                class="btn dropdown-toggle"
+                class="btn dropdown-toggle bg-secondary-subtle ms-3"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
@@ -94,13 +98,15 @@
                 <i class="fa-solid fa-gear"></i>
               </button>
 
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-                <hr class="dropdown-divider" />
-                <a class="dropdown-item" href="#">Log out</a>
-              </div>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -217,33 +223,62 @@
           aria-labelledby="nav-profile-tab"
           tabindex="0"
         >
+          <!-- pill de 1 foto -->
+
           <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-6 border">
+              <div class="d-flex justify-content-between">
+                <h4>My crazy dog spark</h4>
+                <p>08/26</p>
+              </div>
               <img
                 src="https://pampermut.com/blog/wp-content/uploads/2020/05/Como-es-el-caracter-de-tu-perro-segun-su-horoscopo-1155x770.jpg"
                 alt=""
                 class="img-fluid mt-2"
               />
+              <h6 class="pt-2"><b>204 likes</b></h6>
+              <p>
+                This is an example of a very good photo that you can post on
+                instagram
+              </p>
             </div>
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-6 border mt-4">
+              <div class="d-flex justify-content-between">
+                <h4>The greatness of nowhere</h4>
+                <p>04/09</p>
+              </div>
               <img
                 src="https://s1.significados.com/foto/paisaje-natural.jpg?class=article"
                 alt=""
                 class="img-fluid mt-2"
               />
+              <h6 class="pt-2"><b>26986 likes</b></h6>
+              <p>
+                This is an example of a very good photo that you can post on
+                instagram
+              </p>
             </div>
           </div>
 
           <div class="row justify-content-center">
-            <div class="col-6 text-center">
+            <div class="col-6 border my-4">
+              <div class="d-flex justify-content-between">
+                <h4>Amazing GOAL by Cristiano</h4>
+                <p>06/10</p>
+              </div>
               <img
                 src="https://www.clarin.com/img/2018/04/02/rJOJfPbof_1256x620__1.jpg"
                 alt=""
                 class="img-fluid mt-2"
               />
+              <h6 class="pt-2"><b>204 likes</b></h6>
+              <p>
+                This is an example of a very good photo that you can post on
+                instagram
+              </p>
             </div>
           </div>
         </div>
